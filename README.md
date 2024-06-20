@@ -1,14 +1,14 @@
 # windows-cleanup
-3 simple commands that solve some troubles 
 
+# Comandos para reparar arquivos de sistema corrompidos
 
+## Os comandos devem ser executados um por um
 
-1. Type CDM in the search box. Do not hit enter.
-
-2. select Run as Administrator then hit enter.
-
+Abra um terminal cmd.exe e execute um de cada vez na mesma janela.
 ```plain text
-DISM.exe /Online /Cleanup-image /Restorehealth" and hit enter.
+DISM.exe /Online /Cleanup-image /Restorehealth
+
 sfc /scannow
+
 DISM /Online /Cleanup-Image /StartComponentCleanup
 ```
